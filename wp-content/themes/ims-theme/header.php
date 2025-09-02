@@ -51,40 +51,40 @@
               <ul class="dropdown-menu">
                 <!-- Events -->
                 <li class="has-submenu">
-                  <a href="/events">Events</a>
+                  <a href="/events_page">Events</a>
                   <ul class="submenu">
-                    <li><a href="/events#event-management">Event Management</a></li>
-                    <li><a href="/events#corporate-events">Corporate Events</a></li>
-                    <li><a href="/events#private-events">Private Events</a></li>
-                    <li><a href="/events#sports-events">Sports Events</a></li>
-                    <li><a href="/events#wedding-production">Wedding Production</a></li>
-                    <li><a href="/events#theming-decor">Theming And Decor</a></li>
-                    <li><a href="/events#mall-activations">Mall Activations</a></li>
-                    <li><a href="/events#light-sound">Light And Sound</a></li>
+                    <li><a href="/events_page#event-management">Event Management</a></li>
+                    <li><a href="/events_page#corporate-events">Corporate Events</a></li>
+                    <li><a href="/events_page#private-events">Private Events</a></li>
+                    <li><a href="/events_page#sports-events">Sports Events</a></li>
+                    <li><a href="/events_page#wedding-production">Wedding Production</a></li>
+                    <li><a href="/events_page#theming-decor">Theming And Decor</a></li>
+                    <li><a href="/events_page#mall-activations">Mall Activations</a></li>
+                    <li><a href="/events_page#light-sound">Light And Sound</a></li>
                   </ul>
                 </li>
 
                 <!-- Exhibitions -->
                 <li class="has-submenu">
-                  <a href="/exhibitions">Exhibitions</a>
+                  <a href="/exhibitions_page">Exhibitions</a>
                   <ul class="submenu">
-                    <li><a href="/exhibitions#exhibition-stands">Exhibition Stands</a></li>
-                    <li><a href="/exhibitions#exhibition-event">Exhibition Event Services</a></li>
-                    <li><a href="/exhibitions#art-galleries">Art Galleries & Shows</a></li>
-                    <li><a href="/exhibitions#shell-scheme">Shell Scheme</a></li>
-                    <li><a href="/exhibitions#custom-stands">Custom Stands</a></li>
-                    <li><a href="/exhibitions#event-staffing">Event Staffing</a></li>
+                    <li><a href="/exhibitions_page#exhibition-stands">Exhibition Stands</a></li>
+                    <li><a href="/exhibitions_page#exhibition-event">Exhibition Event Services</a></li>
+                    <li><a href="/exhibitions_page#art-galleries">Art Galleries & Shows</a></li>
+                    <li><a href="/exhibitions_page#shell-scheme">Shell Scheme</a></li>
+                    <li><a href="/exhibitions_page#custom-stands">Custom Stands</a></li>
+                    <li><a href="/exhibitions_page#event-staffing">Event Staffing</a></li>
                   </ul>
                 </li>
 
                 <!-- Branding -->
                 <li class="has-submenu">
-                  <a href="/branding">Branding</a>
+                  <a href="/branding_page">Branding</a>
                   <ul class="submenu">
-                    <li><a href="/branding#signage-bill">Signage / Bill Boards</a></li>
-                    <li><a href="/branding#brand-activations">Brand Activations</a></li>
-                    <li><a href="/branding#roadshows">Roadshows</a></li>
-                    <li><a href="/branding#corporate-gifts">Corporate Gifts</a></li>
+                    <li><a href="/branding_page#signage-bill">Signage / Bill Boards</a></li>
+                    <li><a href="/branding_page#brand-activations">Brand Activations</a></li>
+                    <li><a href="/branding_page#roadshows">Roadshows</a></li>
+                    <li><a href="/branding_page#corporate-gifts">Corporate Gifts</a></li>
                   </ul>
                 </li>
 
