@@ -96,7 +96,9 @@ Template Name: Contact Us Page
                     <textarea name="message" placeholder="Message" rows="6"></textarea>
                     <!-- <button type="submit">Submit</button> -->
                     <button type="submit" class="custom-submit-btn">
-                        Submit <span class="btn-icon">↗</span>
+                        Submit 
+                        <!-- <span class="btn-icon">↗</span> -->
+                         <span class="btn-icon"><i class="fas fa-arrow-right" style="display:inline-block; color:#7f1416; transform:rotate(315deg);"></i></span>
                     </button>
 
                 </form>

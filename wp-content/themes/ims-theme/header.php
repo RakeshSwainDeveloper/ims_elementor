@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IMS Website</title>
   <!-- <title><?php wp_title(); ?></title> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css" />
@@ -125,7 +126,7 @@
       </a> -->
         <a href="/contact" class="header-btn-cta" role="button">
           <span class="header-btn-text">Get In Touch</span>
-          <span class="header-btn-icon">↗</span>
+          <span class="header-btn-icon"><i class="fas fa-arrow-right" style="display:inline-block; color:#7f1416; transform:rotate(315deg);"></i></span>
         </a>
 
       </div>

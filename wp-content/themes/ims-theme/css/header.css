@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 /* header.css */
 .site-header {
@@ -104,7 +104,7 @@
 
 .header-btn-cta .header-btn-icon {
   background-color: white;
-  color: #a5161a;
+  /* color: #a5161a; */
   border-radius: 50%;
   width: 32px;
   height: 32px;
