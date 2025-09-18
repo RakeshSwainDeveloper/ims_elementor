@@ -29,7 +29,7 @@ Template Name: Contact Us Page
     <?php endif; ?>
     <!-- Hero Section -->
     <section class="contact-hero">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/waiters.jpg" alt="Contact Banner" class="hero-img" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/image-7.png" alt="Contact Banner" class="hero-img" />
         <div class="hero-overlay">
             <h1>Contact Us</h1>
         </div>
@@ -44,7 +44,7 @@ Template Name: Contact Us Page
     <hr />
 
     <section class="get-in-touch">
-    
+
         <div class="container contact-wrapper">
             <!-- Contact Info -->
             <div class="contact-info">
@@ -85,24 +85,38 @@ Template Name: Contact Us Page
 
             <!-- Contact Form -->
             <div class="contact-form">
-                <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST">
+                <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST" id="contactForm">
                     <input type="hidden" name="action" value="contact_form">
                     <?php wp_nonce_field('submit_contact_form', 'contact_form_nonce'); ?>
 
-                    <input type="text" name="name" placeholder="Name" required />
-                    <input type="email" name="email" placeholder="Email" required />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <input type="text" name="subject" placeholder="Subject" />
-                    <textarea name="message" placeholder="Message" rows="6"></textarea>
-                    <!-- <button type="submit">Submit</button> -->
-                    <button type="submit" class="custom-submit-btn">
-                        Submit 
-                        <!-- <span class="btn-icon">↗</span> -->
-                         <span class="btn-icon"><i class="fas fa-arrow-right" style="display:inline-block; color:#7f1416; transform:rotate(315deg);"></i></span>
-                    </button>
+                    <!-- Name: Only alphabets (spaces allowed), min 2 chars -->
+                    <input type="text" name="name" placeholder="Name"
+                        pattern="[A-Za-z\s]{2,}"
+                        title="Name should contain only alphabets and spaces (min 2 characters)"
+                        required />
 
+                    <!-- Email: HTML5 email validation -->
+                    <input type="email" name="email" placeholder="Email" required />
+
+                    <!-- Phone: Only numbers, 7–15 digits -->
+                    <input type="text" name="phone" placeholder="Phone"
+                        pattern="[0-9]{10}"
+                        title="Phone number should be exactly 10 digits"
+                        required />
+
+                    <!-- Subject: Optional -->
+                    <input type="text" name="subject" placeholder="Subject" />
+
+                    <!-- Message -->
+                    <textarea name="message" placeholder="Message" rows="6"></textarea>
+
+                    <button type="submit" class="custom-submit-btn">
+                        Submit
+                        <span class="btn-icon"><i class="fas fa-arrow-right" style="display:inline-block; color:#7f1416; transform:rotate(315deg);"></i></span>
+                    </button>
                 </form>
             </div>
+
         </div>
     </section>
 

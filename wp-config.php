@@ -30,7 +30,7 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'Swain@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'db' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

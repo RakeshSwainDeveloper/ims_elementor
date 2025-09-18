@@ -1,3 +1,33 @@
+<?php
+$current_url = $_SERVER['REQUEST_URI'];
+
+// All pages that belong to Services dropdown
+$service_pages = [
+  '/events_page',
+  '/exhibitions_page',
+  '/branding_page',
+  '/rental-sales',
+  '/event-website-development',
+  '/event-app-development',
+  '/graphic-design-services',
+  '/social-media',
+  '/ai-powered-event-chatbot',
+  '/registration-ticketing-software',
+  '/audience-engagement-solutions',
+  '/smart-networking-and-matchmaking-page',
+  '/photo-gallery'
+];
+
+// Check if current URL starts with one of these
+$services_active = '';
+foreach ($service_pages as $page) {
+  if (strpos($current_url, $page) !== false) {
+    $services_active = ' active';
+    break;
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -113,7 +143,7 @@
               </ul>
             </li>
 
-            <li><a href="/blog-main">Blog</a></li>
+            <li><a href="/blog-main-page">Blog</a></li>
             <li><a href="/contact-us">Contact Us</a></li>
           </ul>
         </nav>
