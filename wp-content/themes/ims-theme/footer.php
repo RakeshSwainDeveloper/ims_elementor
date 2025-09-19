@@ -33,19 +33,19 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/about-page">About Us</a></li>
         <li><a href="">Services</a></li>
-        <li><a href="/blog-main">Blogs</a></li>
+        <li><a href="/blog-main-page">Blog</a></li>
         <li><a href="/contact-us">Contact Us</a></li>
       </ul>
     </div>
     <div>
       <h4>Services</h4>
       <ul>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Exhibitions</a></li>
-        <li><a href="#">Upcoming Events</a></li>
-        <li><a href="#">Rental and Sales</a></li>
+        <li><a href="/events_page">Events</a></li>
+        <li><a href="/exhibitions_page">Exhibitions</a></li>
+        <li><a href="/blog-main-page">Upcoming Events</a></li>
+        <li><a href="/rental-sales">Rental and Sales</a></li>
       </ul>
     </div>
     <div>
