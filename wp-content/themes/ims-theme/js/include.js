@@ -1,34 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+  adjustBodyPadding();
   setActiveNavLink();
   enableDropdownMenus();
-  adjustBodyPadding();
+  enableInputValidation();
+
   window.addEventListener('resize', adjustBodyPadding);
 });
 
+/* ========================
+   Adjust body padding
+======================== */
 function adjustBodyPadding() {
   const header = document.querySelector('.site-header');
   if (header) {
     requestAnimationFrame(() => {
-      const height = header.offsetHeight;
-      document.body.style.paddingTop = `${height}px`;
+      document.body.style.paddingTop = `${header.offsetHeight}px`;
     });
   }
 }
 
-// function setActiveNavLink() {
-//   const currentUrl = window.location.href;
-//   const navLinks = document.querySelectorAll('.nav-links a');
-
-//   navLinks.forEach(link => {
-//     if (link.href === currentUrl || link.href === currentUrl + '/') {
-//       link.classList.add('active');
-//     } else {
-//       link.classList.remove('active');
-//     }
-//   });
-// }
+/* ========================
+   Active link handling
+======================== */
 function setActiveNavLink() {
-  const currentPath = window.location.pathname.replace(/\/$/, ""); 
+  const currentPath = window.location.pathname.replace(/\/$/, "");
   const navLinks = document.querySelectorAll('.nav-links a');
   const servicePaths = [
     "/events_page",
@@ -39,7 +34,7 @@ function setActiveNavLink() {
     "/event-app-development",
     "/graphic-design-services",
     "/social-media",
-    "/ai-powered-event-chatbot",
+    "/powered-event",
     "/registration-ticketing-software",
     "/audience-engagement-solutions",
     "/smart-networking-and-matchmaking-page",
@@ -66,43 +61,49 @@ function setActiveNavLink() {
     }
 
     link.classList.remove('active');
+
     if (servicePaths.includes(currentPath)) {
       const servicesParent = document.querySelector('.nav-links .dropdown > a');
       if (servicesParent) {
         servicesParent.classList.add('active');
       }
-    }
-    else if (linkPath === currentPath) {
+    } else if (linkPath === currentPath) {
       link.classList.add('active');
     }
   });
 }
-document.addEventListener("DOMContentLoaded", setActiveNavLink);
 
-
+/* ========================
+   Dropdowns + Mobile Menu
+======================== */
 function enableDropdownMenus() {
   const dropdownItems = document.querySelectorAll('.nav-links .has-submenu');
   const mobileToggle = document.querySelector('.mobile-menu-toggle');
   const navWrapper = document.querySelector('.nav-wrapper');
 
+  // Mobile menu toggle
   if (mobileToggle && navWrapper) {
     mobileToggle.addEventListener('click', () => {
       navWrapper.classList.toggle('open');
+      document.body.classList.toggle('menu-open'); // prevent scroll
     });
   }
 
+  // Dropdown handling
   dropdownItems.forEach(item => {
+    const parentLink = item.querySelector('a');
+
+    // Desktop hover
     item.addEventListener('mouseenter', () => {
       if (window.innerWidth >= 768) item.classList.add('open');
     });
-
     item.addEventListener('mouseleave', () => {
       if (window.innerWidth >= 768) item.classList.remove('open');
     });
 
-    const triggerLink = item.querySelector('a:not([href="#"])');
-    if (triggerLink) {
-      triggerLink.addEventListener('click', e => {
+    // Mobile click toggle
+    if (parentLink) {
+      parentLink.addEventListener('click', e => {
         if (window.innerWidth < 768) {
           e.preventDefault();
           item.classList.toggle('open');
@@ -110,19 +111,24 @@ function enableDropdownMenus() {
       });
     }
   });
+}
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const nameInput = document.querySelector("input[name='name']");
-    const phoneInput = document.querySelector("input[name='phone']");
+/* ========================
+   Input validation
+======================== */
+function enableInputValidation() {
+  const nameInput = document.querySelector("input[name='name']");
+  const phoneInput = document.querySelector("input[name='phone']");
 
-    
+  if (nameInput) {
     nameInput.addEventListener("input", function () {
       this.value = this.value.replace(/[^A-Za-z\s]/g, "");
     });
+  }
 
-
+  if (phoneInput) {
     phoneInput.addEventListener("input", function () {
       this.value = this.value.replace(/[^0-9]/g, "");
     });
-  });
+  }
 }

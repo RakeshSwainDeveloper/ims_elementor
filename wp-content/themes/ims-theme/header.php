@@ -45,18 +45,6 @@ foreach ($service_pages as $page) {
 
 <body <?php body_class(); ?>>
 
-
-
-  <!-- <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IMS Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css" />
-  </head> -->
-
-
   <header class="site-header">
     <div class="container header-container">
       <!-- Mobile Menu Toggle -->
@@ -135,7 +123,7 @@ foreach ($service_pages as $page) {
                 <li><a href="/event-app-development">Event App Development</a></li>
                 <li><a href="/graphic-design-services">Graphic Design Services</a></li>
                 <li><a href="/social-media">Social Media Marketing</a></li>
-                <li><a href="/ai-powered-event-chatbot">AI-Powered Event Chatbot</a></li>
+                <li><a href="/powered-event">AI-Powered Event Chatbot</a></li>
                 <li><a href="/registration-ticketing-software">Registration & Ticketing Software</a></li>
                 <li><a href="/audience-engagement-solutions">Audience Engagement Solutions</a></li>
                 <li><a href="/smart-networking-and-matchmaking-page">Smart Networking & Matchmaking</a></li>

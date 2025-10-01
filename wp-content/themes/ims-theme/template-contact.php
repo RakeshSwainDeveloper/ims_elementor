@@ -76,10 +76,10 @@ Template Name: Contact Us Page
 
                 <div class="social-links">
                     <span>Follow Us:</span>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i> </a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/imsuae/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ims_uae/"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/imsuae/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
@@ -122,7 +122,15 @@ Template Name: Contact Us Page
 
     <!-- Map Section -->
     <section class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4347.987236977613!2d77.37394267628459!3d28.681671875638166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb004e43710f%3A0x66c17d0dc37fc889!2sRakesh%20Jena%20House!5e1!3m2!1sen!2sin!4v1754824295252!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.372540953178!2d55.2780549!3d25.2138711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428c4b20d9c1%3A0xda2a93cfee3dee03!2sAl%20Saqr%20Business%20Tower!5e0!3m2!1sen!2s!4v1696165768921!5m2!1sen!2s"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
 
 

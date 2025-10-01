@@ -51,10 +51,10 @@
     <div>
       <h4>Follow Us</h4>
       <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
+        <li><a href="https://www.facebook.com/imsuae/">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/imsuae/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/ims_uae/">Instagram</a></li>
+        <!-- <li><a href="#">Twitter</a></li> -->
       </ul>
     </div>
     <div class="footer-logo">
